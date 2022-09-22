@@ -9,6 +9,9 @@ body {
 .title h2 {
   color: rgb(90, 81, 100);
 }
+.copy-btn {
+  display: none;
+}
 .color-options {
   display: flex;
   flex-direction: row;
@@ -36,14 +39,17 @@ body {
   margin-top: 20px;
 }
 
-.choice-color {
-  padding: 240px 0;
-  background-color:antiquewhite;
+#choice-color {
+  padding: 100px 0;
+  border: 2px solid #eae7f6;
+  background-color:#fff;
   width: 50%
 }
-.recommand-color {
-  padding: 240px 0;
-  background-color:cadetblue;
+
+#bosek-color {
+  padding: 100px 0;
+  border: 2px solid #eae7f6;
+  background-color:#fff;
   width: 50%
 }
 
