@@ -9,8 +9,11 @@
 </head>
 <body>
   <!-- color pick -->
-  <div><h1>보색 추천기</h1></div>
-  <div>
+  <div class="title">
+    <h1>Complementary Color Recommand</h1>
+    <h2>보색 추천기</h2>
+  </div>
+  <div class="color-options">
     <div class="color-option" value="" data-color="red" style="background-color: red"></div>
     <div class="color-option" value="" data-color="red" style="background-color: red"></div>
     <div class="color-option" value="" data-color="red" style="background-color: red"></div>
@@ -23,9 +26,13 @@
     <div class="color-option" value="" data-color="red" style="background-color: red"></div>
     <div class="color-option" value="" data-color="red" style="background-color: red"></div>
   </div>
-  <div>
-    <h3 style="background-color:antiquewhite">이 영역은 선택된 컬러가 보여질 박스</h3>
-    <h3 style="background-color:cadetblue">이 영역은 선택된 컬러에 반대되는 보색 박스</h3>
+  <div class="color-container">
+    <div>
+      <h4 style="background-color:antiquewhite">선택 컬러</h4>
+    </div>
+    <div>
+      <h4 style="background-color:cadetblue">보색 컬러</h4>
+    </div>
   </div>
   <script src="app.js" type="text/javascript"></script>
 </body>
