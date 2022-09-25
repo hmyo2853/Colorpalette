@@ -10,13 +10,25 @@ function onColorClick(event) {
   const bosek = event.target.dataset.bosek;
   colorBg.style.backgroundColor = color;
   bosekBg.style.backgroundColor = bosek;
-  copyBtn.forEach((items) => items.style.display = "inline");
+  if (colorBg.style.color != "white") {
+    colorBg.style.color = "white";
+  }
+  if (bosekBg.style.color != "white") {
+    bosekBg.style.color = "white";
+  }
+  copyBtn.forEach((items) => items.style.visibility = "visible");
   colorBg.querySelector("h4").innerText = `${color}`;
   bosekBg.querySelector("h4").innerText = `${bosek}`;
 }
 
-function onCopyBtnClick() {
-  console.log("버튼 클릭했음!")
+// hex code copy button
+function onCopyBtnClick(event) {
+  const colorText = event.target.parentNode.querySelector("h4").innerText;
+  navigator.clipboard
+  .writeText(colorText)
+  .then(
+    success => alert(`색상 코드 ${colorText} 복사완료!`)
+  );
 }
 
 // hex code change fc
